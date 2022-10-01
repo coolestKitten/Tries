@@ -10,7 +10,7 @@ class Trie{
 
         void addWord(string);
 
-        //void shList();
+        void shList();
 
         //void searchWord(string);
         
@@ -47,6 +47,9 @@ void Trie::addWord(string word){
     cout << endl;
 }
 
-////void Trie::shList(){
+void Trie::shList(){
+    HEAD->shNode();
+    HEAD->fetchEdge('t')->shNode();
+    HEAD->fetchEdge('c')->shNode();
 
-//}
+}

@@ -11,5 +11,7 @@ int main(){
     list1.addWord("try");
     list1.addWord("cry");
 
+    list1.shList();
+
     return 0;
 }
